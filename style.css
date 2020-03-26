@@ -1,0 +1,66 @@
+
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 4rem;
+    
+}
+h2{
+    font-size: 2.5rem;
+}
+
+h4,h3{
+    font-size: 2rem;
+}
+
+
+.day{
+    position: absolute;
+    left: 10px;
+    font-size: 2rem;
+    top: 0;
+}
+.animate{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.active{
+   animation: pop 3.5s ease-in-out; 
+}
+
+
+@keyframes pop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
